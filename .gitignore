@@ -1,0 +1,13 @@
+# Local environments, credentials, caches, and generated files
+.env
+.env.*
+!.env.example
+credentials.json
+token.json
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db

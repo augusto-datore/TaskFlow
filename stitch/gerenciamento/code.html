@@ -1,0 +1,683 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-high":"#e9e8e8","surface-tint":"#5f5e5e","surface-variant":"#e4e2e2","on-tertiary-fixed":"#1c1b1b","background":"#fbf9f9","error":"#ba1a1a","on-secondary-fixed":"#1b1c1c","surface-container-lowest":"#ffffff","tertiary":"#000000","outline-variant":"#c4c7c7","surface-bright":"#fbf9f9","surface-container-highest":"#e4e2e2","on-secondary-container":"#636262","tertiary-container":"#1c1b1b","on-tertiary":"#ffffff","error-container":"#ffdad6","inverse-surface":"#303031","secondary-fixed":"#e5e2e1","on-surface-variant":"#444748","outline":"#747878","surface-dim":"#dbdada","surface-container-low":"#f5f3f3","on-primary-container":"#858383","on-primary":"#ffffff","on-primary-fixed":"#1c1b1b","on-error-container":"#93000a","primary-container":"#1c1b1b","tertiary-fixed":"#e6e1e1","primary-fixed":"#e5e2e1","on-primary-fixed-variant":"#474646","tertiary-fixed-dim":"#cac5c5","secondary-container":"#e2dfde","primary":"#000000","on-secondary-fixed-variant":"#474746","primary-fixed-dim":"#c9c6c5","on-surface":"#1b1c1c","on-tertiary-container":"#868383","on-error":"#ffffff","on-background":"#1b1c1c","surface-container":"#efeded","secondary":"#5f5e5e","secondary-fixed-dim":"#c8c6c5","on-tertiary-fixed-variant":"#484646","inverse-on-surface":"#f2f0f0","inverse-primary":"#c9c6c5","surface":"#fbf9f9","on-secondary":"#ffffff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-md":"1.5rem","gutter-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem","margin-lg":"2.5rem","space-sm":"0.5rem","margin":"1rem","gutter":"1rem","space-lg":"1.5rem","space-xl":"2rem"},fontFamily:{"code-sm":["Inter"],"display":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"title-md":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"headline-sm":["Inter"],"body-md":["Inter"]},fontSize:{"code-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"400"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.03em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.025em","fontWeight":"600"}],"title-md":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.015em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface-dim font-body-md text-body-md text-on-surface antialiased p-4 lg:p-6 min-h-screen"><div class="max-w-[1440px] mx-auto min-h-[calc(100vh-3rem)] rounded-2xl bg-surface-container border border-secondary-fixed shadow-[0_1px_2px_0_rgba(32,32,32,0.03),0_4px_12px_0_rgba(32,32,32,0.015)] relative flex flex-col"><header class="fixed top-4 lg:top-6 left-4 lg:left-6 right-4 lg:right-6 max-w-[1440px] mx-auto h-16 z-40 bg-surface-container/90 backdrop-blur-md border-b border-secondary-fixed px-6 flex items-center justify-between gap-4 rounded-t-2xl"><div class="flex items-center gap-3 shrink-0"><img alt="TaskFlow Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VcYVlRlfIN__TYpGWcS8mbSQ1jHL8jW2MqMXPIOUjEJEJbirgULwfDb3M7c-g7gAoN55EDL1eH-r8WUg2_mN9aPevb-DTdokdq6BCIkKjw1meS_gywvk5eZor8mghNg7XPDxF30yWBir9ywr7slvlSkfbAfUhiaB-Kx2tLtrXESkpHqdlKPlum5ASgA-_N_IeEW2c8mOdzdodM5gK90CLDjniDEw3PZuHZgzGjtQG6XNjMwAxLLKrJt5E"><span class="font-title-md text-title-md text-on-surface tracking-tight font-semibold">TaskFlow</span><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-secondary-container text-on-surface-variant">Workspace Corporativo</span></div><div class="flex-1 max-w-md mx-4 hidden md:flex items-center bg-surface border border-secondary-fixed rounded-xl px-3 h-9"><span class="material-symbols-outlined text-outline text-[18px] mr-2">search</span><input class="w-full bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-outline-variant" placeholder="Pesquisar tarefas, quadros ou membros..." type="text"><kbd class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant shrink-0 ml-2">⌘K</kbd></div><div class="flex items-center gap-3 shrink-0"><button class="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">business</span><span class="font-label-md text-label-md">Acme Enterprise</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></button><button aria-label="Notificações" class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container"></span></button><button aria-label="Configurações" class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">settings</span></button><div class="relative flex items-center ml-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAbNkhwjHLTMW6rBVlInpE81XK5RJ7kEzlvWZ935iVSt61cOjE2HlyfX1NyztCC5Bgge8eorLpqCOATQG8awyWq1ne7KeL1tK2kh1VSdpdZSM71h7CxDgxoqMJcbDoKFSc_UzlR774Q4hLWxbaZ5MS-gVBeQbRzYf5O9pn0q_GLHplDgHcBCzNDV_Tpn5VAzpUknoMeHQ3MH8ckKN5jORzGeHQTzMQHaiUPvSWToedWBJFE4NLpuyW"><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary ring-2 ring-surface-container"></span></div></div></header><div class="flex flex-1 pt-16"><aside class="fixed top-20 lg:top-22 left-4 lg:left-6 bottom-4 lg:bottom-6 w-[72px] bg-surface-variant border-r border-secondary-fixed flex flex-col justify-between items-center py-4 z-30 rounded-bl-2xl"><nav class="flex flex-col items-center gap-2 w-full px-2" data-active-classes="bg-primary text-on-primary shadow-sm"><a class="flex items-center justify-center w-11 h-11 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#" title="Dashboard"><span class="material-symbols-outlined text-[20px]">dashboard</span></a><a aria-current="page" class="flex items-center justify-center w-11 h-11 rounded-xl transition-all bg-primary text-on-primary shadow-sm" data-path="tarefas" href="#" title="Tarefas"><span class="material-symbols-outlined text-[20px]">check_circle</span></a><a class="flex items-center justify-center w-11 h-11 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="quadro-kanban" href="#" title="Quadro Kanban"><span class="material-symbols-outlined text-[20px]">view_kanban</span></a><a class="flex items-center justify-center w-11 h-11 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="calendario" href="#" title="Calendário"><span class="material-symbols-outlined text-[20px]">calendar_today</span></a><a class="flex items-center justify-center w-11 h-11 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="relatorios" href="#" title="Relatórios"><span class="material-symbols-outlined text-[20px]">bar_chart</span></a></nav><div class="flex flex-col items-center gap-2 w-full px-2"><a class="flex items-center justify-center w-11 h-11 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="configuracoes" href="#" title="Configurações"><span class="material-symbols-outlined text-[20px]">tune</span></a><a class="flex items-center justify-center w-11 h-11 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ajuda-suporte" href="#" title="Ajuda / Suporte"><span class="material-symbols-outlined text-[20px]">help_outline</span></a></div></aside><div class="pl-[72px] w-full min-h-full flex flex-col flex-1"><main class="w-full flex-1 p-6 lg:p-8 bg-surface-container"><div class="flex flex-col w-full gap-6">
+<!-- Top Command & Breadcrumb Section -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 font-code-sm text-code-sm text-secondary">
+<span class="">Workspace</span>
+<span class="">/</span>
+<span class="">Operações</span>
+<span class="">/</span>
+<span class="text-on-surface font-medium">Tarefas</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Gerenciamento de Tarefas</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Visualize, filtre, edite e crie novas tarefas com armazenamento local persistente.</p>
+</div>
+<div class="flex items-center gap-2.5 flex-wrap">
+<button class="h-9 px-3.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-1.5 shadow-sm hover:bg-surface-container-high transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+<span class="">Filtros avançados</span>
+</button>
+<button class="h-9 px-3.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-1.5 shadow-sm hover:bg-surface-container-high transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">file_download</span>
+<span class="">Exportar CSV</span>
+</button>
+<button class="h-9 px-4 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-2 shadow-sm hover:bg-primary-container transition-all" onclick="document.getElementById('task-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span class="">Nova tarefa</span>
+</button>
+</div>
+</div>
+<!-- Real-time Filter & Search Bar Strip -->
+<div class="p-3 bg-surface-container-low rounded-xl flex flex-col lg:flex-row gap-2.5 items-center justify-between shadow-sm">
+<div class="w-full lg:w-96 flex items-center bg-surface-container-lowest rounded-lg px-3 h-9 shadow-sm">
+<span class="material-symbols-outlined text-outline text-[18px] mr-2">search</span>
+<input class="w-full bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-outline-variant" placeholder="Buscar por título, responsável ou tag..." type="text">
+<span class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">⌘F</span>
+</div>
+<div class="flex items-center gap-2 w-full lg:w-auto overflow-x-auto pb-1 lg:pb-0">
+<div class="flex items-center bg-surface-container-lowest px-2.5 h-9 rounded-lg shadow-sm gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary">Status:</span>
+<select class="bg-transparent text-on-surface font-label-md text-label-md outline-none cursor-pointer pr-1">
+<option>Todos os status</option>
+<option>Pendente</option>
+<option>Em andamento</option>
+<option>Concluída</option>
+<option>Atrasada</option>
+</select>
+</div>
+<div class="flex items-center bg-surface-container-lowest px-2.5 h-9 rounded-lg shadow-sm gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary">Prioridade:</span>
+<select class="bg-transparent text-on-surface font-label-md text-label-md outline-none cursor-pointer pr-1">
+<option>Todas</option>
+<option>Alta</option>
+<option>Média</option>
+<option>Baixa</option>
+</select>
+</div>
+<div class="flex items-center bg-surface-container-lowest px-2.5 h-9 rounded-lg shadow-sm gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary">Membro:</span>
+<select class="bg-transparent text-on-surface font-label-md text-label-md outline-none cursor-pointer pr-1">
+<option>Todos os membros</option>
+<option>Helena Ramos</option>
+<option>Carlos Eduardo</option>
+<option>Mariana Prado</option>
+<option>Lucas Vianna</option>
+</select>
+</div>
+<div class="flex items-center bg-surface-container-lowest px-2.5 h-9 rounded-lg shadow-sm gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">swap_vert</span>
+<select class="bg-transparent text-on-surface font-label-md text-label-md outline-none cursor-pointer pr-1">
+<option>Prazo mais próximo</option>
+<option>Mais recentes</option>
+<option>Prioridade máxima</option>
+<option>Maior progresso</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Operational Metric Tiles -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3">
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Total de Tarefas</span>
+<span class="material-symbols-outlined text-[18px]">checklist</span>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-display text-headline-lg text-on-surface">32</span>
+<span class="font-label-sm text-label-sm text-secondary">+4 nesta semana</span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Em Execução</span>
+<span class="material-symbols-outlined text-[18px]">pending_actions</span>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-display text-headline-lg text-on-surface">14</span>
+<span class="font-label-sm text-label-sm text-secondary">43.7% do total</span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Finalizadas</span>
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-display text-headline-lg text-on-surface">15</span>
+<span class="font-label-sm text-label-sm text-secondary">Sprint 24 atingida</span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Atrasadas / Críticas</span>
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-display text-headline-lg text-error">03</span>
+<span class="font-label-sm text-label-sm text-error">Ação prioritária</span>
+</div>
+</div>
+</div>
+<!-- Primary Task Management Table Card -->
+<div class="bg-surface-container-low rounded-xl p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2.5">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Quadro Executivo de Tarefas</span>
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">32 registros</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-on-surface" title="Recarregar" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-on-surface" title="Densidade da tabela" type="button">
+<span class="material-symbols-outlined text-[18px]">density_medium</span>
+</button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-3 rounded-l-lg w-10 text-center">
+<input class="rounded accent-primary w-3.5 h-3.5 cursor-pointer" type="checkbox">
+</th>
+<th class="py-3 px-3">Nome da Tarefa</th>
+<th class="py-3 px-3">Categoria / Projeto</th>
+<th class="py-3 px-3">Responsável</th>
+<th class="py-3 px-3">Status</th>
+<th class="py-3 px-3">Prioridade</th>
+<th class="py-3 px-3">Prazo</th>
+<th class="py-3 px-3">Progresso</th>
+<th class="py-3 px-3 rounded-r-lg text-right">Ações rápidas</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-high/60 transition-colors group">
+<td class="py-3.5 px-3 text-center">
+<input class="rounded accent-primary w-3.5 h-3.5 cursor-pointer" type="checkbox">
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary font-medium">Revisão trimestral de metas OKR</span>
+<span class="font-label-sm text-label-sm text-secondary">TK-1082 • Alinhamento com diretoria executiva</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-md bg-surface-container text-on-surface">Estratégia 2025</span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Close-up portrait of Helena Ramos, senior strategist, neutral corporate backdrop, soft natural light, minimalist aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX63Sc6_tY6vS0k03bToEnhE9AuBr7rFlnvirLRjiNKY7aD5XzHWTqIsO65wnhxTuviAh8lWABJt0UUD-h9LJsjeqOKrf_qE-bdLinEnUZdFfVU-Rm4EihfL_1G68T3HU5qhDUpsI2W2_tQqZgdICEPpjNthXn_hEZkFGjUcghCbf5lrDUirk10wLsXLTQgDnKvKs_1AhZxh2Ryc2uurhesxf69mQpZbSlVg_kGHiyvlL4I5E2Brvy">
+<span class="font-body-md text-body-md text-on-surface">Helena Ramos</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Em andamento
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+<span class="">Alta</span>
+</div>
+</td>
+<td class="py-3.5 px-3 font-code-sm text-code-sm text-on-surface">28 Out, 2025</td>
+<td class="py-3.5 px-3 w-36">
+<div class="flex items-center gap-2">
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 75%"></div>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">75%</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" title="Visualizar" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" onclick="document.getElementById('task-modal').classList.remove('hidden')" title="Editar" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-error" onclick="document.getElementById('delete-confirmation-toast').classList.remove('hidden')" title="Excluir" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-high/60 transition-colors group">
+<td class="py-3.5 px-3 text-center">
+<input class="rounded accent-primary w-3.5 h-3.5 cursor-pointer" type="checkbox">
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary font-medium">Auditoria de segurança SOC2 Tipo II</span>
+<span class="font-label-sm text-label-sm text-secondary">TK-1081 • Entrega de logs e conformidade ISO</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-md bg-surface-container text-on-surface">Compliance</span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait of Carlos Eduardo, head of infrastructure and security, modern workstation, muted lighting, sharp focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCklXkPRzGEn9exBPrka9H8OpIxW6izCDYKtrtj7t5N7VRNqTqDp6wx3SKMbckq9X3KxLhFVZIrPN1bpVemRlMAMKCfQjKnsE1bmmMfONuXGDSxeM3ltJb6TfQeCRFSAuZH3EDbcJyt6HgM7u3zuDdRtF78MzNKR8yHbR0Ar3s6RW0CfEBsBmFTJ7PudXrFirIeNgR25z8Ja0_16TMcra8y1z7YuvS777UcR3-HEbA9NGO0F37bIJve">
+<span class="font-body-md text-body-md text-on-surface">Carlos Eduardo</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Atrasada
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1 text-error font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[14px]">priority_high</span>
+<span class="">Crítica</span>
+</div>
+</td>
+<td class="py-3.5 px-3 font-code-sm text-code-sm text-error">24 Out, 2025</td>
+<td class="py-3.5 px-3 w-36">
+<div class="flex items-center gap-2">
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 30%"></div>
+</div>
+<span class="font-code-sm text-code-sm text-error">30%</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" title="Visualizar" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" onclick="document.getElementById('task-modal').classList.remove('hidden')" title="Editar" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-error" onclick="document.getElementById('delete-confirmation-toast').classList.remove('hidden')" title="Excluir" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-high/60 transition-colors group">
+<td class="py-3.5 px-3 text-center">
+<input checked="" class="rounded accent-primary w-3.5 h-3.5 cursor-pointer" type="checkbox">
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary font-medium">Refatoração de API Gateway para gRPC</span>
+<span class="font-label-sm text-label-sm text-secondary">TK-1080 • Redução de latência inter-serviços</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-md bg-surface-container text-on-surface">Engenharia Core</span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait of Mariana Prado, senior backend developer, minimalist architectural office in background, monochrome palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWQoimUlroiJohxmcGAZaMHXQU5SB6ebYtrs2UoDD_pfTcXYomCZdnXsC6fVyUaJS_arRAOwvHrDuZd8HpFo8pRpOkZ2e-nSFy9WKrv68iEQkoV-0GzkjocKooFJeZDjLapyQx1sxD7fX_i8AuRCa6bRvX6BHG_A33kVR2mcVfek3v3VReLCr0G5Bidyoq6HDAWTmFdWayzSuYrEdnYakoZIfP2gHzhat3uqF4A_XYp196anSnzNem">
+<span class="font-body-md text-body-md text-on-surface">Mariana Prado</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Concluída
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+<span class="">Média</span>
+</div>
+</td>
+<td class="py-3.5 px-3 font-code-sm text-code-sm text-secondary">22 Out, 2025</td>
+<td class="py-3.5 px-3 w-36">
+<div class="flex items-center gap-2">
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 100%"></div>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">100%</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" title="Visualizar" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" onclick="document.getElementById('task-modal').classList.remove('hidden')" title="Editar" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-error" onclick="document.getElementById('delete-confirmation-toast').classList.remove('hidden')" title="Excluir" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-high/60 transition-colors group">
+<td class="py-3.5 px-3 text-center">
+<input class="rounded accent-primary w-3.5 h-3.5 cursor-pointer" type="checkbox">
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary font-medium">Contratação de Lead Product Designer</span>
+<span class="font-label-sm text-label-sm text-secondary">TK-1079 • Entrevistas técnicas fase 3</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-md bg-surface-container text-on-surface">Pessoas &amp; Cultura</span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait of Lucas Vianna, talent lead, clean daylight studio lighting, wearing minimal black collar shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0RZHFFCYdmm3w2lJnShLvRMUh7-b6QsucAd-nEHECRQLNXsRhPAFo03_MSQZ0Dto4O1-I2XYGh9BwNzcHH7gEDuz31q3bi0JXCImV2ebjTQdsz_3e3m_vT8RHTDreFSbBiH-iMBPzqKyVuy0grM2jk-EiEa85nMntlMe3oWtc216lnL9zYzOWLqzswc-Y0FRcdVMDdxYLcp59FF2JTrydeqsd5zeQGdd-VRyvuSLJk1YFRvIhRbg6">
+<span class="font-body-md text-body-md text-on-surface">Lucas Vianna</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> Pendente
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+<span class="">Baixa</span>
+</div>
+</td>
+<td class="py-3.5 px-3 font-code-sm text-code-sm text-on-surface">02 Nov, 2025</td>
+<td class="py-3.5 px-3 w-36">
+<div class="flex items-center gap-2">
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 15%"></div>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">15%</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" title="Visualizar" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" onclick="document.getElementById('task-modal').classList.remove('hidden')" title="Editar" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-error" onclick="document.getElementById('delete-confirmation-toast').classList.remove('hidden')" title="Excluir" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-high/60 transition-colors group">
+<td class="py-3.5 px-3 text-center">
+<input class="rounded accent-primary w-3.5 h-3.5 cursor-pointer" type="checkbox">
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary font-medium">Otimização de custos AWS e Kubernetes</span>
+<span class="font-label-sm text-label-sm text-secondary">TK-1078 • Descomissionamento de instâncias ociosas</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-md bg-surface-container text-on-surface">Infraestrutura</span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait of Carlos Eduardo, technology manager, sleek contemporary office, focused gaze, warm limestone tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWNKtFh-i95jTRkdUJdjvkDJUm0BeqbuuXGaT1p_Wi4hpWAIOY6COeBQx56ArdsXuLgl4I5Qto_blhEe0o008p0qMq5pozu35hvSYY1Lmeluutjax5sRjeAWYZX1vM1Yk12OAD4gw6Ca1EkDwjH3gZIJCnM4O1VwSQT1xQ0B-ONEtgLOGAab7tEx1uRBoeFH37z2RHPOlCWRzv_EARNXsSgc3Tzzvk_oM2w5FG_q44A6ddNoaydF2P">
+<span class="font-body-md text-body-md text-on-surface">Carlos Eduardo</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Em andamento
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+<span class="">Alta</span>
+</div>
+</td>
+<td class="py-3.5 px-3 font-code-sm text-code-sm text-on-surface">05 Nov, 2025</td>
+<td class="py-3.5 px-3 w-36">
+<div class="flex items-center gap-2">
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 55%"></div>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">55%</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" title="Visualizar" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" onclick="document.getElementById('task-modal').classList.remove('hidden')" title="Editar" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-error" onclick="document.getElementById('delete-confirmation-toast').classList.remove('hidden')" title="Excluir" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-high/60 transition-colors group">
+<td class="py-3.5 px-3 text-center">
+<input class="rounded accent-primary w-3.5 h-3.5 cursor-pointer" type="checkbox">
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary font-medium">Design System: Componentes Tokens v2.0</span>
+<span class="font-label-sm text-label-sm text-secondary">TK-1077 • Mapeamento em Figma e Tailwind</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-md bg-surface-container text-on-surface">Produto</span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait of Helena Ramos, design executive, focused and confident expression, alabaster wall background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3eO4Le40JxEtx3khgWknpwgEOAUx8WLq8VONm47AJZ4zpVlkHEpoKUTe6xbNf_7ofzpYWYZdIm_d8ls9EbrkJyNtHr0sNaWTAc1zUVXbwu9zUqDKtDc2RmybFo6dRj1F3uPzXEeAC-TCxic7zUxMMwOQMmq2c36ZQUmHh8evZAYbiRWgFzBulsA5sx4fwqkWjqqgzo-P7cs-1jlZjmw81Z--AAOxydrv2Ckz6MAetUM1erm9sM35E">
+<span class="font-body-md text-body-md text-on-surface">Helena Ramos</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Concluída
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+<span class="">Média</span>
+</div>
+</td>
+<td class="py-3.5 px-3 font-code-sm text-code-sm text-secondary">19 Out, 2025</td>
+<td class="py-3.5 px-3 w-36">
+<div class="flex items-center gap-2">
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 100%"></div>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">100%</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" title="Visualizar" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" onclick="document.getElementById('task-modal').classList.remove('hidden')" title="Editar" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-error" onclick="document.getElementById('delete-confirmation-toast').classList.remove('hidden')" title="Excluir" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7 -->
+<tr class="hover:bg-surface-container-high/60 transition-colors group">
+<td class="py-3.5 px-3 text-center">
+<input class="rounded accent-primary w-3.5 h-3.5 cursor-pointer" type="checkbox">
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary font-medium">Contrato de renovação com Data Provider</span>
+<span class="font-label-sm text-label-sm text-secondary">TK-1076 • Validação jurídica e termos de SLA</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-md bg-surface-container text-on-surface">Jurídico</span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait of Lucas Vianna, legal operations analyst, modern tailored jacket, neutral grey environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE75AOO6W1MkzTUQL8J4nTcJnzR3yR94oOz9ePQPoTkL_rQK_4RBpx0t7z1zvKS8KuKPVB41pOhtqtp-YZp6vW7VxPz0iOWnunc9nusksDwLc0u767gin8m8QYfTktRWezf9B9ZJaSYXr-kYmqtThgCEhIj288bTxONOrfpxyRqNc0rTmEfaOFZI-o_aoyPun5_0tAiXWtLC68HmTAXv4NEtO0xUsuK9EVdzsO2tKPRkAn6g4sIH8S">
+<span class="font-body-md text-body-md text-on-surface">Lucas Vianna</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Em andamento
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+<span class="">Alta</span>
+</div>
+</td>
+<td class="py-3.5 px-3 font-code-sm text-code-sm text-on-surface">30 Out, 2025</td>
+<td class="py-3.5 px-3 w-36">
+<div class="flex items-center gap-2">
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 40%"></div>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">40%</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" title="Visualizar" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface" onclick="document.getElementById('task-modal').classList.remove('hidden')" title="Editar" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary hover:text-error" onclick="document.getElementById('delete-confirmation-toast').classList.remove('hidden')" title="Excluir" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Bottom Pagination Section -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-3">
+<span class="font-label-md text-label-md text-secondary">
+        Exibindo <span class="text-on-surface font-medium">1-7</span> de <span class="text-on-surface font-medium">32</span> tarefas
+      </span>
+<div class="flex items-center gap-1.5">
+<button class="h-8 px-2.5 rounded-lg bg-surface-container text-secondary hover:text-on-surface font-label-md text-label-md disabled:opacity-40" disabled="" type="button">
+          Anterior
+        </button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center" type="button">
+          1
+        </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center justify-center" type="button">
+          2
+        </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center justify-center" type="button">
+          3
+        </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center justify-center" type="button">
+          4
+        </button>
+<button class="h-8 px-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md" type="button">
+          Próxima
+        </button>
+</div>
+</div>
+</div>
+<!-- FLOATING CRUD MODAL (Nova Tarefa / Edição) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/20 backdrop-blur-sm transition-all overflow-y-auto" id="task-modal">
+<div class="w-full max-w-[520px] bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="px-6 py-4 flex items-center justify-between bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-on-surface">task</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Nova Tarefa</h2>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" onclick="document.getElementById('task-modal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Modal Body Form -->
+<form class="p-6 flex flex-col gap-4" onsubmit="event.preventDefault(); document.getElementById('task-modal').classList.add('hidden');">
+<!-- Task Title -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium">Título da tarefa <span class="text-error">*</span></label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:bg-surface-container placeholder:text-outline-variant" placeholder="Ex: Revisão trimestral de metas OKR" required="" type="text">
+</div>
+<!-- Task Description -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium">Descrição detalhada</label>
+<textarea class="p-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:bg-surface-container placeholder:text-outline-variant resize-none" placeholder="Insira o escopo, critérios de aceitação ou notas relevantes..." rows="3"></textarea>
+</div>
+<!-- 2 Col: Assignee & Deadline -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium">Responsável</label>
+<div class="relative">
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:bg-surface-container appearance-none cursor-pointer">
+<option value="helena">Helena Ramos</option>
+<option value="carlos">Carlos Eduardo</option>
+<option value="mariana">Mariana Prado</option>
+<option value="lucas">Lucas Vianna</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-secondary absolute right-3 top-2.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-medium">Prazo</label>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container text-secondary">Obrigatório</span>
+</div>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:bg-surface-container" required="" type="date" value="2025-10-28">
+</div>
+</div>
+<!-- 2 Col: Priority & Initial Status -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium">Prioridade</label>
+<div class="grid grid-cols-3 gap-1 bg-surface-container-low p-1 rounded-lg">
+<label class="flex items-center justify-center py-1.5 rounded-md text-center cursor-pointer font-label-sm text-label-sm text-secondary hover:text-on-surface has-[:checked]:bg-surface-container-lowest has-[:checked]:text-on-surface has-[:checked]:shadow-sm">
+<input class="sr-only" name="priority" type="radio" value="baixa">
+                Baixa
+              </label>
+<label class="flex items-center justify-center py-1.5 rounded-md text-center cursor-pointer font-label-sm text-label-sm text-secondary hover:text-on-surface has-[:checked]:bg-surface-container-lowest has-[:checked]:text-on-surface has-[:checked]:shadow-sm">
+<input checked="" class="sr-only" name="priority" type="radio" value="media">
+                Média
+              </label>
+<label class="flex items-center justify-center py-1.5 rounded-md text-center cursor-pointer font-label-sm text-label-sm text-secondary hover:text-on-surface has-[:checked]:bg-surface-container-lowest has-[:checked]:text-on-surface has-[:checked]:shadow-sm">
+<input class="sr-only" name="priority" type="radio" value="alta">
+                Alta
+              </label>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium">Status inicial</label>
+<div class="relative">
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:bg-surface-container appearance-none cursor-pointer">
+<option value="pendente">Pendente</option>
+<option selected="" value="andamento">Em andamento</option>
+<option value="concluida">Concluída</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-secondary absolute right-3 top-2.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Category & Tags -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium">Categoria / Projeto</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:bg-surface-container placeholder:text-outline-variant" placeholder="Ex: Estratégia 2025" type="text">
+</div>
+<!-- Modal Actions Footer -->
+<div class="flex items-center justify-end gap-2.5 pt-3">
+<button class="h-10 px-4 rounded-xl bg-surface-container-low text-secondary hover:text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="document.getElementById('task-modal').classList.add('hidden')" type="button">
+            Cancelar
+          </button>
+<button class="h-10 px-5 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-sm transition-all" type="submit">
+            Criar tarefa
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- PERSISTENT / MINI PREVIEW CONFIRMATION BOX (Confirmação de Exclusão) -->
+<div class="fixed bottom-6 right-6 z-40 max-w-sm w-full bg-surface-container-lowest p-4 rounded-xl shadow-xl flex flex-col gap-3" id="delete-confirmation-toast">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-error-container text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">delete_forever</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-medium">Excluir esta tarefa?</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Esta ação não pode ser desfeita. Todos os subitens e registros vinculados serão removidos.</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2">
+<button class="h-8 px-3 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface font-label-md text-label-md" onclick="document.getElementById('delete-confirmation-toast').classList.add('hidden')" type="button">
+        Cancelar
+      </button>
+<button class="h-8 px-3.5 rounded-lg bg-error text-on-error font-label-md text-label-md hover:bg-error/90 shadow-sm" onclick="document.getElementById('delete-confirmation-toast').classList.add('hidden')" type="button">
+        Excluir
+      </button>
+</div>
+</div>
+</div></main></div></div></div>
+
+</body></html>

@@ -38,10 +38,10 @@ tests/run-tests.js  Testes sem dependências externas
 
 ## Executar localmente
 
-Abra `index.html` em um navegador moderno. Se o navegador restringir scripts ou armazenamento no endereço `file://`, abra um terminal nesta pasta e execute:
+Você pode acessar diretamente pelo navegador em https://augusto-datore.github.io/TaskFlow/ ou abrir `index.html` em um navegador moderno. Se o navegador restringir scripts ou armazenamento no endereço `file://`, abra um terminal nesta pasta e execute:
 
-```sh
-python -m http.server 8000
+```bash
+python -m http.server 80000
 ```
 
 Depois acesse `http://localhost:8000`. Os dados pertencem ao perfil e à origem do navegador utilizados. Trocar de navegador, perfil ou endereço local poderá mostrar uma lista diferente.

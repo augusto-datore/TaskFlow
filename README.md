@@ -64,7 +64,7 @@ node tests/run-tests.js
 
 O arquivo imprime identificador, requisito, cenário e resultado. A suíte cobre regras de cadastro/validação de tarefas e entidades, associação com projeto/equipe, edição, exclusão pura, status, atraso e indicadores, busca/filtros e armazenamento incluindo dados inválidos e falhas de escrita. Veja o registro de execução deste ciclo em `TEST_REPORT.md`.
 
-Consulte [TEST_REPORT.md](TEST_REPORT.md) para resultados por requisito, incluindo verificações visuais e interativas no navegador que não fazem parte da suíte automatizada.
+Consulte [TEST_REPORT.md](TEST_REPORT.md) para ver o resultado da suíte automatizada e o status das verificações manuais, que não fazem parte dessa suíte.
 
 ## Integridade e limitações
 

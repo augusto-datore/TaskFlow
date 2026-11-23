@@ -34,3 +34,44 @@ js/workspace.js     Cadastro local de usuários, equipes e projetos
 js/app.js           Interface, filtros, indicadores e exportações
 Notificações        Tarefas com prazo dentro das próximas 24 horas
 tests/run-tests.js  Testes sem dependências externas
+```
+
+## Executar localmente
+
+Você pode acessar diretamente pelo navegador em https://augusto-datore.github.io/TaskFlow/ ou abrir `index.html` em um navegador moderno. Se o navegador restringir scripts ou armazenamento no endereço `file://`, abra um terminal nesta pasta e execute:
+
+```bash
+python -m http.server 8000
+```
+
+Depois acesse `http://localhost:8000`. Os dados pertencem ao perfil e à origem do navegador utilizados. Trocar de navegador, perfil ou endereço local poderá mostrar uma lista diferente.
+
+## Uso
+
+Use **Cadastros** para registrar usuários (nome, e-mail, perfil e equipes), equipes (nome, equipe principal e integrantes) e projetos (nome, descrição, equipe e prazo). O prazo de projeto aceita hoje ou datas futuras. Esses são registros de organização locais, não contas: não há senha, login, autenticação ou isolamento de dados por usuário. A exclusão de uma equipe atualiza as relações de equipes nos cadastros e projetos; as tarefas preservam os nomes dos responsáveis como histórico.
+
+Use **Nova tarefa** para cadastrar. Título, responsável, data, horário e status são obrigatórios. O formulário destaca cada campo ausente ou inválido e mostra a mensagem “Preencha todos os campos obrigatórios”. Dias anteriores são indisponíveis; se a data for hoje, o horário mínimo é a hora/minuto atual. Ao editar, inclusive uma tarefa concluída, a data e o horário continuam disponíveis para alteração dentro dessas regras. O responsável pode ser selecionado entre os usuários cadastrados ou digitado livremente. Projeto e equipe são opcionais. Na tabela, altere o status com o seletor; use os ícones de edição e exclusão para as outras operações. A busca do cabeçalho e a busca da tela Tarefas são sincronizadas e também encontram o nome do projeto/equipe associado; a busca do cabeçalho fica disponível somente em **Tarefas**. No Kanban do Painel, selecione o status do cartão ou escolha **Editar**; a alteração é salva no mesmo registro local. Os filtros afetam as listas e o relatório imprimível, enquanto os indicadores e cartões do Kanban representam todos os registros armazenados. **Limpar filtros** restaura a lista completa.
+
+**Exportar JSON** baixa uma cópia completa das tarefas. Em **Relatórios**, marque uma ou mais pessoas responsáveis antes de gerar o PDF; apenas tarefas dessas pessoas, combinadas com a busca e os filtros ativos, entram no relatório. Sem marcações, o relatório inclui todos os responsáveis dentro dos demais filtros. A impressão não salva automaticamente um PDF; escolha essa opção no navegador. Permita pop-ups se o navegador bloquear a janela.
+
+## Testes
+
+Execute a suíte sem instalar pacotes:
+
+```sh
+node tests/run-tests.js
+```
+
+O arquivo imprime identificador, requisito, cenário e resultado. A suíte cobre regras de cadastro/validação de tarefas e entidades, associação com projeto/equipe, edição, exclusão pura, status, atraso e indicadores, busca/filtros e armazenamento incluindo dados inválidos e falhas de escrita. Veja o registro de execução deste ciclo em `TEST_REPORT.md`.
+
+Consulte [TEST_REPORT.md](TEST_REPORT.md) para resultados por requisito, incluindo verificações visuais e interativas no navegador que não fazem parte da suíte automatizada.
+
+## Integridade e limitações
+
+- Se o JSON armazenado não puder ser lido ou contiver registros inválidos, a aplicação avisa e bloqueia gravações para evitar sobrescrever os dados originais. **Exportar JSON** nesse estado baixa uma cópia exata do conteúdo original para recuperação.
+- Erros de acesso, cota cheia ou bloqueio do navegador são apresentados ao usuário; o app não promete armazenamento permanente nem seguro.
+- O relatório depende da janela de impressão oferecida pelo navegador; escolher e concluir “Salvar como PDF” é uma ação do usuário.
+- Não há importação de JSON, backup automático, login, compartilhamento ou sincronização. Usuários/equipes/projetos ficam em `taskflow.workspace.v1`; tarefas continuam no formato existente em `taskflow.tasks.v1` e recebem apenas campos opcionais `projectId` e `teamId` quando associados.
+- A obrigatoriedade de responsável e status e o prazo mínimo em hoje foram ajustados a pedido do usuário; isso diverge do documento técnico original, que permitia responsável opcional e definia status inicial automático `A fazer`.
+- A referência visual oferece telas desktop e modal, mas não inclui especificação técnica responsiva. Os breakpoints foram definidos para reorganizar os cartões, os filtros e a navegação em telas estreitas; a tabela mantém rolagem horizontal.
+- A inspeção visual da aplicação renderizada no navegador ainda está pendente. Os testes automatizados cobrem regras, armazenamento simulado e verificações estáticas; não validam interação visual, impressão ou responsividade renderizada.

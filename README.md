@@ -4,7 +4,7 @@ Aplicação local para cadastro, consulta e acompanhamento de tarefas, usuários
 
 ## Requisitos e identidade visual
 
-O escopo funcional foi extraído da documentação técnica atualizada. A pasta `stitch_taskflow_corporate_dashboard/` e a captura de tela anexada orientam o dashboard. A interface usa navegação lateral azul-marinho, cabeçalho claro, cartões de indicadores e acentos de cor para atraso, vencimento próximo e status, mantendo as operações locais do MVP. Painel, Tarefas e Relatórios compartilham os mesmos cinco cartões, dimensões, cores e sequência; abas e botões têm transições suaves, respeitando a preferência do sistema por movimento reduzido.
+O escopo funcional foi extraído da documentação técnica atualizada. A pasta `stitch/` e a captura de tela anexada orientam o dashboard. A interface usa navegação lateral azul-marinho, cabeçalho claro, cartões de indicadores e acentos de cor para atraso, vencimento próximo e status, mantendo as operações locais do MVP. Painel, Tarefas e Relatórios compartilham os mesmos cinco cartões, dimensões, cores e sequência; abas e botões têm transições suaves, respeitando a preferência do sistema por movimento reduzido.
 
 Os nomes e dados que aparecem nas capturas de referência não foram copiados. A aba Cadastros permite que a própria pessoa crie registros locais de usuários, equipes e projetos; não há contas ou autenticação. Os gráficos do dashboard usam tarefas e responsáveis do `localStorage`; nenhuma fonte, biblioteca ou serviço externo é necessário.
 
@@ -41,7 +41,7 @@ tests/run-tests.js  Testes sem dependências externas
 Você pode acessar diretamente pelo navegador em https://augusto-datore.github.io/TaskFlow/ ou abrir `index.html` em um navegador moderno. Se o navegador restringir scripts ou armazenamento no endereço `file://`, abra um terminal nesta pasta e execute:
 
 ```bash
-python -m http.server 80000
+python -m http.server 8000
 ```
 
 Depois acesse `http://localhost:8000`. Os dados pertencem ao perfil e à origem do navegador utilizados. Trocar de navegador, perfil ou endereço local poderá mostrar uma lista diferente.

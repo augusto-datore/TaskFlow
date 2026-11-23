@@ -1,6 +1,8 @@
 # Registro de testes — TaskFlow
 
-Execução: `node tests/run-tests.js` em 24/10/2026, após melhorar o hover/foco das setas de seleção e navegação. Resultado atual: **31 aprovados, 0 reprovados**. Os testes exercitam regras puras, armazenamento simulado e presença estática de conteúdo; não equivalem a uma regressão visual ou interativa no navegador.
+Execução: `node tests/run-tests.js` em 23/11/2026.
+Resultado: **31 aprovados, 0 reprovados**.
+A suíte cobre regras de negócio, armazenamento simulado e verificações estáticas de conteúdo. Não cobre testes visuais ou interativos no navegador, responsividade renderizada nem impressão.
 
 | ID | Requisito | Cenário / esperado | Observado | Status | Observações |
 |---|---|---|---|---|---|
